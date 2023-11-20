@@ -135,8 +135,70 @@
         </p>
         <p>Både WAD og WCAG kan du
             lese mer om på <a href="https://www.uutilsynet.no/">uutilsynet sin nettsider</a>.</p>
-
-        <h2>Party &#127881;</h2>
+        <h2>Starten på en MultipleChoice</h2>
+        <p>Ethvert byggverk trenger et godt fundament, så vi starter jobben med å bygge en MultipleChoice med å sette
+            opp de grunnleggende elementene vi trenger til dette:</p>
+        <div class="code">
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="nb"&gt;        
+    &lt;head&gt;
+        &lt;title&gt;Tittel&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;main&gt;
+            &lt;h1&gt;Overskrift&lt;/h1&gt;
+            &lt;p&gt;Brødtekst&lt;/p&gt;
+            &lt;form&gt;
+                &lt;fieldset&gt;
+                    &lt;legend&gt;Her kommer selve spørsmålet&lt;/legend&gt;
+                    &lt;input type="radio" name="spørsmål1" id="svar1" value="Alternativ a"/&gt;
+                    &lt;label for="svar1"&gt;Alternativ a&lt;/label&gt;
+                    &lt;br /&gt;
+                    &lt;input type="radio" name="spørsmål1" id="svar2" value="Alternativ b"/&gt;
+                    &lt;label for="svar2"&gt;Alternativ b&lt;/label&gt;
+                    &lt;br /&gt;
+                    &lt;input type="radio" name="spørsmål1" id="svar2" value="Alternativ c"/&gt;
+                    &lt;label for="svar2"&gt;Alternativ b&lt;/label&gt;
+                    &lt;br /&gt;
+                &lt;/fieldset&gt;
+                &lt;button type="submit"&gt;Send svar&lt;/button&gt;
+            &lt;/form&gt;
+        &lt;/main&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+        </div>
+        <p><em>Form</em> elementet brukes for å pakke inn standard interaktivitet i html. Alle skjemaer du fyller ut på
+            nett er pakket inn
+            med form. <br />
+            <em>Fieldset</em> brukes for å gruppere deler av et skjema som naturlig hører sammen. F.eks
+            kan det brukes
+            for å gruppere adresseinformasjon i ett skjema på en nettbutikk. <br />
+            <em>Legend</em> er en slags tittel for fieldset
+            elementet. <br />
+            <em>Input</em> elementet er her satt opp til å fungere som en "radio" knapp. Det vil si at
+            i en gruppe med radio inputs kan det alltid bare være en av dem som er valgt. Så her er det ikke mulig å
+            velge mer enn ett svar. Andre alternativer som kan brukes for å sette typen av input er f.eks: <code>text, button,
+            checkbox, color, date, email, file, hidden, image, password</code> og mange flere.<br />
+            <em>Label</em> elementet er det som
+            knytter tekst til selve knappen og er viktig for å sikre universell utforming.<br />
+            Til slutt her er det også et
+            <em>button</em> element som brukes for å aktivere innsending av skjemaet. Her kunne det også vært brukt en
+            input med
+            typen button.
+        </p>
+        <p>Den enkleste måten å komme i gang å teste å skrive noe egen kode er å gjøre det rett på nett på for eksempel
+            <a href="https://codepen.io/">Codepen</a>, da trenger du ikke ha noe installert på maskinen din og jobber
+            bare
+            rett på nett. Gå til CodePen og klikk på "Start Coding" så er du i gang. Prøv å kopiere inn koden over her
+            inn i HTML feltet
+            og se hvordan det blir seende ut.
+        </p>
+        <p>HTML-språket består av litt over 100 ulike elementer i sin nåværende versjon (HTML 5.2). De ulike elementene
+            kan bruke litt forskjellige attributter (som f.eks <code>type</code> som vist over her) og det er ca 170
+            ulike attributter totalt.</p>
+        <h2>Party party &#127881;</h2>
         <p>Jeg lovet et partytriks så her kommer det. Dette funker dessverre bare på en laptop/desktop og ikke på mobil.
             Først må du åpne utviklerverktøyet som er innebygd i nettleseren din (Dev Tools). Enkleste måten å
             åpne det er å trykke på <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>j</kbd> (Mac: <kbd>Cmd</kbd> +
@@ -164,11 +226,6 @@
             <li><a href="https://web.dev/learn/html">Learn HTML</a></li>
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs</a></li>
         </ul>
-        <p>Den enkleste måten å komme i gang å teste å skrive noe egen kode er å gjøre det rett på nett på for eksempel
-            <a href="https://codepen.io/">Codepen</a>, da trenger du ikke ha noe installert på maskinen din og jobber
-            bare
-            rett på nett.
-        </p>
     </main>
 </body>
 
