@@ -79,12 +79,34 @@
         <h1>HyperText Markup Language - HTML</h1>
         <p>I dag skal du lære litt om en av de mest grunnleggende byggesteinene for internett. Som bonus får du lære et
             fint lite partytriks. </p>
-        <h2>Historie</h2>
+        <h2>Men først - litt historie</h2>
         <p>I 1989 oppfant <a href="https://www.w3.org/People/Berners-Lee/">Tim Berners-Lee</a> det vi kaller <span
                 lang="en">World Wide Web</span>. Han jobbet ved <a href="https://home.cern/">CERN</a> hvor de forsker på
             partikkelfysikk. Målet hans med dette www-prosjektet var å forbedre og automatisere informasjonsdeling
             mellom forskere ved ulike universiteter og institutt i verden. Her er <a
                 href="https://info.cern.ch/hypertext/WWW/TheProject.html">verdens første nettside</a>.</p>
+        <p>HTML har hatt en litt uryddig versjonshistorikk. Det startet som et språk som ble standardisert av <a
+                href="https://www.w3.org/">W3C (World
+                Wide Web Consortium)</a> og ble først brukt blant forskere for å koble sammen en samling med
+            forskningsrapporter
+            om fysikk. Så utviklet det seg raskt til å bli brukt av veldig mange flere da man ås hvor lett det var å få
+            publisert innholdet sitt. Men mange av de som publiserte var mer opptatt av innholdet sitt enn å
+            nødvendgivis følge standarden helt så nettleserne begynte tidlig å være veldig &laquo;tilgivende&raquo; og
+            håndterte dårlig/feil formatterte html-dokument så godt de kunne for å sikre at innholdet skulle kunne bli
+            vist likevel.</p>
+        <p>Tidlig på 2000-tallet begynte W3C å gå bort fra denne ideen om kompabilitet og tilgivenhet mot dårlig kode,
+            de ville ha en strengere standard og utviklet <a href="https://www.w3.org/TR/xhtml1/">XHTML</a> som er
+            basert på XML og skulle da kunne tvinge
+            nettlesere til å ikke vise innhold dersom koden var feil. Utviklere hos Opera og Mozilla likte dette veldig
+            dårlig og kom med en rekke gode forslag til W3C, men de ble blankt avfeid. Utviklerne fikk etterhvert med
+            seg også utviklere hos Apple og jobbet videre med sin alternative HTML standard under en paraplyorganisasjon
+            de opprettet som het <a href="https://whatwg.org/">WHATWG</a>. I 2006 innså W3C at de hadde valgt feil og ba
+            til slutt WHATWG om å få bruke
+            deres standard istedenfor og den ble så grunnlaget for dagens HTML5 standard som kom rundt 2008. Med HTML5
+            fikk vi støtte for audio og video som tidligere måtte støttes gjennom tredjepartsteknologier som for
+            eksempel <a href="https://www.adobe.com/products/flashplayer/end-of-life.html">Adobe/Macromedia Flash</a> og
+            <a href="https://www.microsoft.com/silverlight/">Microsoft Silverlight</a>
+        </p>
 
         <h2>Kode</h2>
         <p>Lurer du på hvordan html kode ser ut? Høyre-klikk på denne nettsiden (Ctrl-klikk på Mac) og velg "View
@@ -115,6 +137,12 @@
 &lt;/html&gt;
 </pre>
         </div>
+        <p>I tillegg til selve elementene har man også attributter som ytterligere definerer elementets funksjon. F.eks
+            kan de fleste elementene ha et <code>id</code>-attributt som da unikt skal identifisere dette elementet i et
+            dokument. Et annet attributt er <code>alt</code>-attributtet for <code>img</code> elementet, det brukes for
+            å gi en tekstlig beskrivelse av et bildet. Det kan da både brukes av søkemotorer og av
+            skjermleserprogrammvare så det er viktig både for å komme høyere opp i resultatene hos Google og for å sikre
+            at alle kan få nytte av innholdet. </p>
         <h2>Semantisk html og universell utforming</h2>
         <p>God struktur og riktig bruk av elementene i html koden er viktig for at nettsiden og innholdet skal bli vist
             frem
@@ -226,6 +254,8 @@
             <li><a href="https://web.dev/learn/html">Learn HTML</a></li>
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs</a></li>
         </ul>
+        <p>I neste luke, som kommer på mandag skal vi se litt nærmere på den teknologien som styrer hvordan en nettside
+            ser ut - nemlig Cascading Style Sheets</p>
     </main>
 </body>
 
